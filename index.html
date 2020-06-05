@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Title</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        body>section{
+            position: absolute;
+            width: 100vw;
+            height: 50vh;
+        }
+        body>section:nth-child(1){
+            background: red;
+        }
+        body>section:nth-child(2){
+            background: green;
+            bottom: 0;
+        }
+        section>div{
+            position: absolute;
+            height: 100%;
+            width: calc(100%/3);
+        }
+        section>div:nth-child(1){
+            background: deepskyblue;
+        }
+        section>div:nth-child(2){
+            background: saddlebrown;
+            right: 0;
+        }
+        section>div:nth-child(3){
+            background: darkblue;
+        }
+        body>div{
+            width: 150px;
+            height: 150px;
+            background: white;
+            position: absolute;
+            margin:auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            transform: rotate(45deg);
+        }
+        body>div>div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 100px;
+            position: absolute;
+            margin:auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        section>div>div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 100px;
+            position: absolute;
+            margin:auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        body>article{
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            background: white;
+            margin: auto;
+        }
+        #a{
+            top: 20px;
+            left: 0;
+            right: 0;
+            background: white;
+        }
+        body>article:last-child{
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div style="background: white">
+        <div></div>
+    </div>
+    <div style="background: chartreuse">
+        <div></div>
+    </div>
+</section>
+<section>
+    <div style="background: gray">
+        <div></div>
+    </div>
+    <div>
+        <div></div>
+    </div>
+</section>
+<div>
+    <div></div>
+</div>
+
+<article id="a"></article>
+<article></article>
+
+
+</body>
+</html>
